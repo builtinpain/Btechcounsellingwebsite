@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./chatbot.css">
+</head>
+<body>
+
+      <div class="counselling">
+     <div class="head">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="./Logo.png" alt=""  style="height: 250px;" >
+        </div>
+
+
+        <!-- navbar -->
+         <div class="section">
+            <!-- Home -->
+            <div class="home">
+                <a href="./counselling.html"><img src="./Home.svg" alt="" style="height: 50px;" class="chota"></a>
+               <h3>Home</h3>
+            </div>
+            <!-- college -->
+            <div class="college">
+                <a href="./College.html"> <img src="./College.svg" style="height:50px" alt="" class="chota"></a>
+                <h3>College</h3>
+            </div>
+            <!-- predictor -->
+            <div class="predictor">
+                <a href="./Predictor.html"><img src="./predictor.svg" alt="" style="height: 50px;" class="chota"></a>
+                 <h3 >Predictor</h3>
+            </div>
+            <!-- Premium -->
+             <div class="premium">
+                <a href="./Premium.html"><img src="./premium.svg" alt="" style="height: 50px;" class="chota"></a>
+                
+                <h3>Premium</h3>
+             </div>
+             <!-- Compare -->
+              <div class="compare">
+                <a href="./Compare.html"> <img src="./Compare.svg" alt="" style="height: 50px; " class="chota"></a> 
+                <h3>Compare</h3>
+              </div>
+              <!-- News -->
+               <div class="news">
+                <a href="./chatbot.html"> <img src="./chatbox.svg" alt="" style="height: 50px; " class="chota"></a> 
+                <h3>Chatbox</h3>
+               </div>
+
+<!-- //Chatbox -->
+  </div>
+
+
+<div class="chatcontainer">
+
+    <div class="chat-header">
+
+        <div class="chat-logo">🤖</div>
+
+        <div>
+            <h2>Campus AI Assistant</h2>
+            <p>Ask anything about counselling & colleges</p>
+        </div>
+
+    </div>
+
+
+    <div id="chatbox" class="chatbox">
+
+        <div class="chat-message botmessage">
+            👋 Hello !<br>
+            How can I help you today?
+        </div>
+
+        <div class="chat-message usermessage">
+            Which college is better?
+        </div>
+
+    </div>
+
+
+    <div class="chat-inputarea">
+
+        <input 
+        type="text"
+        id="userinput"
+        placeholder="Ask your question...">
+
+        <button id="send">➜</button>
+
+    </div>
+
+</div>
+<script src="./chat.js"></script>
+
+    
+</body>
+</html>

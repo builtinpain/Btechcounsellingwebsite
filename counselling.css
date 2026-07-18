@@ -1,0 +1,618 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:sans-serif;
+    color:#a0a0a0;
+    line-height:1.6;
+    padding:30px 50px;
+    height: 500vh;
+    background: linear-gradient(135deg,#111111,#1B1B1B,#0C0C0C);
+  
+}
+.section img{
+    filter: brightness(0) saturate(100%)
+            invert(75%) sepia(60%)
+            saturate(600%) hue-rotate(5deg);
+}
+
+.head{
+    display: flex; 
+    justify-content: space-around;
+    height: 120px; 
+    background: rgba(17,17,17,.9);
+    backdrop-filter: blur(190px);
+    border-bottom:3px solid rgba(212,175,55,.25);
+    flex-wrap: wrap;
+    border-radius: 5px;
+    
+}
+
+
+.section{
+display: flex;
+gap:50px;
+padding-top: 10px;
+flex-wrap: wrap;
+}
+
+.logo img{
+    margin-top: -60px;
+}
+
+
+ @media (max-width:768px){
+
+    .head{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+    }
+
+    .logo img{
+        height:180px;
+        margin-top:0;
+    }
+    .section{
+        justify-content:center;
+        gap:25px;
+        margin-top:20px;
+    }
+
+} 
+  
+
+.Photos{
+    background: rgba(17,17,17,.9);
+    padding: 20px 20px;
+    border-radius: 10px; 
+  
+    
+}
+.pick{
+ display: flex;
+     /* justify-content: center;  */
+    /* align-items: center; */ 
+    gap: 100px;
+    overflow-x: scroll;
+    text-decoration: none;
+     animation:moving 20s linear infinite;
+} 
+
+
+.pick img{
+    border-radius: 10px;
+    height: 500px;
+    width: 100vw;
+    margin-left: 60px;
+    object-fit:cover;
+}
+
+
+
+
+
+
+.Event{
+    margin-top:20px;
+    padding:20px;
+    background:#1A1A1A;
+    border-radius:15px;
+    border:1px solid #2b2b2b;
+}
+
+.Event h2{
+    color:#fff;
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.calendar,
+.Reminder{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:15px;
+    margin-top:15px;
+    background:#242424;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.calendar:hover,
+.Reminder:hover{
+    background:#2f2f2f;
+    transform:translateY(-2px);
+}
+
+.calendar h3,
+.Reminder h3{
+    color:#fff;
+    margin-bottom:5px;
+    font-size:18px;
+}
+
+.calendar span,
+.Reminder span{
+    color:#bdbdbd;
+    font-size:25px;
+    line-height:1.5;
+   position: relative;
+   top: -5px;
+}
+
+/* SVG Icons */
+.c,
+.i{
+    width:42px;
+    height:42px;
+    flex-shrink:0;
+
+    /* Gold Color */
+    filter: brightness(0) saturate(100%)
+            invert(82%) sepia(42%)
+            saturate(650%)
+            hue-rotate(2deg)
+            brightness(102%)
+            contrast(95%);
+}
+
+
+/* Scrollbar */
+.pick::-webkit-scrollbar {
+    height: 10px;
+}
+
+.pick::-webkit-scrollbar-track {
+    background: #0d0d0d;
+}
+
+.pick::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #FFD700, #C9A227);
+    border-radius: 5px;
+    transition: 0.3s;
+   
+}
+
+.pick::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #FFE55C, #FFD700);
+}
+
+.top{
+    margin-top: 28px;
+     padding: 40px 10px;
+    background: rgba(17,17,17,.9);
+    backdrop-filter: blur(190px); 
+    border-radius: 15px;
+      background:#242424;
+      
+      
+
+       
+}
+.t{
+    text-align: center;
+     background-color: #1e1e1e;
+  
+    font-size: 1.8rem;
+    margin-top: 10px;
+    border: 1px solid #3a3a3a;
+   
+}
+
+
+
+
+
+.features{
+    box-sizing: border-box;
+    display: grid;
+     grid-template-rows: repeat(auto-fit,minmax(150px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+    padding: 10px 120px;
+    row-gap: 100px;
+    text-align: center;
+    column-gap: 200px;
+    color: rgb(99, 95, 95);
+    font-size: 15px;
+    font-weight: bold;
+   
+}
+
+
+
+
+.box{
+
+     background-color: #FFBF00;
+
+    border-radius: 25px;
+      color:#2C2C2C;
+      height: 220px;
+      width: 200px;
+   color:#5A4300;
+   transition: transform 0.3s linear;
+}
+.box img{
+    margin-top: 10px;
+   
+}
+
+.box:hover{
+    cursor: pointer;
+    transform: translateX(3px) scale(1.02);
+    box-shadow:
+        0 15px 40px rgba(212,175,55,.5);
+
+         
+}
+.jeemain{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+     background-color: #1e1e1e;
+     padding: 20px;
+     border-radius: 20px;
+
+
+}
+.jm{
+    border-radius: 30px;
+}
+.jeemain:hover{
+    background:#2f2f2f;
+    transform: translate(-2px);
+}
+.Date{
+    margin-top: 40px;
+    background:#2f2f2f;
+    height: 800px;
+     border-radius: 20px;
+    
+
+  
+}
+.important{
+    padding: 20px;
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+}
+.E img{
+   
+    filter: brightness(0) saturate(100%)
+            invert(82%) sepia(42%)
+            saturate(650%)
+            hue-rotate(2deg)
+            brightness(102%)
+            contrast(95%);;
+
+}
+.content{
+    width: 100%;
+    height: 2px;
+      background: #D4AF37; 
+      border-radius: 20px;
+}
+
+.one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.Session{
+  
+    padding: 40px;
+    display: flex;
+   
+ 
+    justify-content: center;
+    /* align-items: flex-start; */
+    flex: 1;
+
+}
+.heading h2{
+color: rgb(16, 15, 15);
+color: white;
+}
+.online{
+    display: flex;
+    margin-top: 5px;
+    gap: 20px;
+}
+.form img{
+   filter: brightness(0) saturate(100%)
+            invert(82%) sepia(42%)
+            saturate(650%)
+            hue-rotate(2deg)
+            brightness(102%)
+            contrast(95%);;
+}
+.exam{
+   display: flex;
+margin-top: 5px;
+gap: 20px;
+
+}
+.tareekh img{
+      filter: brightness(0) saturate(100%)
+            invert(82%) sepia(42%)
+            saturate(650%)
+            hue-rotate(2deg)
+            brightness(102%)
+            contrast(95%);
+            position: relative;
+            left: -5px;
+}
+
+.Declare{
+    display: flex;
+    margin-top: 5px;
+    gap: 20px;
+}
+.r img{
+  filter: brightness(0) saturate(100%)
+            invert(82%) sepia(42%)
+            saturate(650%)
+            hue-rotate(2deg)
+            brightness(102%)
+            contrast(95%);;
+}
+.session2{
+    display: flex;
+    padding: 40px;
+     justify-content: center;
+    /* align-items: flex-start; */
+}
+
+
+.one,
+.two,
+.three{
+    flex: 1;
+}
+
+.hardwork {
+    background:#2f2f2f;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 10px;
+   
+}
+.Branch img{
+    height: 500px;
+    border-radius: 10px;
+}
+
+
+
+
+/* =========================
+   Laptop (1440px)
+========================= */
+
+@media (max-width:1440px){
+
+    body{
+        padding:25px 35px;
+    }
+
+    .head{
+        justify-content:space-between;
+        align-items:center;
+        padding:0 25px;
+    }
+
+    .logo img{
+        height:220px;
+        margin-top:-45px;
+    }
+
+    .section{
+        gap:35px;
+    }
+
+    .pick{
+        gap:60px;
+        
+    }
+
+    .pick .first,
+    .pick .second,
+    .pick .third,
+    .pick .forth{
+        width:90vw;
+        height:450px;
+        margin-left:20px;
+        object-fit:cover;
+    }
+
+    .Event h2{
+        font-size:26px;
+    }
+
+}
+
+
+
+/* =========================
+   Small Laptop (1366px)
+========================= */
+
+/* =========================
+   Laptop Responsive Fix
+========================= */
+
+@media (max-width:1440px){
+
+    body{
+        padding:20px 30px;
+    }
+
+    /* Header */
+    .head{
+        height:auto;
+        min-height:120px;
+        align-items:center;
+        padding:10px 20px;
+    }
+
+    .logo img{
+        height:180px;
+        margin-top:-35px;
+    }
+
+    .section{
+        gap:30px;
+    }
+
+    /* Slider Images */
+    .pick img{
+        width:90vw;
+        height:420px;
+        margin-left:0;
+    }
+
+    /* Features */
+    .features{
+        grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+        padding:20px;
+        column-gap:40px;
+        row-gap:40px;
+        justify-items:center;
+    }
+
+    .box{
+        width:220px;
+        height:230px;
+    }
+
+    /* Important Dates */
+    .Date{
+        height:auto;
+        padding-bottom:30px;
+    }
+
+    .Session,
+    .session2{
+        flex-wrap:wrap;
+        gap:30px;
+    }
+
+    /* Branch Predictor Banner */
+    .Branch img{
+        width:100%;
+        max-width:1200px;
+        height:auto;
+        display:block;
+    }
+
+    /* JEE Main Image */
+    .jm{
+        width:100%;
+        max-width:1100px;
+        height:auto;
+    }
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    .head{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+    }
+
+    .logo img{
+        height:180px;
+        margin-top:0;
+    }
+
+    .section{
+        justify-content:center;
+        gap:25px;
+        margin-top:20px;
+    }
+
+    .pick{
+        gap:20px;
+    }
+
+    .pick .first,
+    .pick .second,
+    .pick .third,
+    .pick .forth{
+        width:95vw;
+        height:300px;
+        margin-left:0;
+    }
+
+    .calendar,
+    .Reminder{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width:480px){
+
+    body{
+        padding:15px;
+    }
+
+    .logo img{
+        height:150px;
+    }
+    .section{
+        
+        gap:18px;
+    }
+
+    .pick .first,
+    .pick .second,
+    .pick .third,
+    .pick .forth{
+        height:220px;
+    }
+
+    .Event h2{
+        font-size:22px;
+    }
+
+    .calendar h3,
+    .Reminder h3{
+        font-size:16px;
+    }
+
+    .calendar p,
+    .Reminder p{
+        font-size:13px;
+    }
+
+    .c,
+    .i{
+        width:30px;
+        height:30px;
+    }
+
+}
